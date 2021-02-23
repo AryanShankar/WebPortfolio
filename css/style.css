@@ -208,7 +208,71 @@ section.skills .card-wrapper .card:hover h2, section.skills .card-wrapper .card:
 }
 
 
+section.projects{
+    background: var(--dark);
+}
 
+section.projects .section-heading{
+    color: var(--pure);
+}
+
+section.projects .slider .slide h1{
+    color: var(--pure);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+section.projects .slider .slide img{
+    object-fit: cover;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+section.projects .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+section.projects .slider .slide p{
+    font-family: 'Lato', sans-serif;
+    color: var(--pure);
+}
+
+section.projects .slider .slide button{
+    border-radius: 20%;
+    font-size: 0.9rem;
+
+}
+
+section.projects .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.projects .slider-dots{
+    margin-top: 2rem;
+}
+
+section.projects .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.projects .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
 
 section.contact .card-wrapper{
     display: grid;
