@@ -39,6 +39,7 @@ header nav{
     margin:0 auto;
 }
 
+
 header nav .left a{
     color: var(--pure);
     text-decoration: none;
@@ -206,6 +207,8 @@ section.skills .card-wrapper .card:hover{
 section.skills .card-wrapper .card:hover h2, section.skills .card-wrapper .card:hover p{
     color: var(--pure);
 }
+
+
 
 
 section.projects{
@@ -377,5 +380,203 @@ footer p{
 
 
 
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.mobile-nav button{
+    margin-top: 1rem;
+}
 
 
+@media (min-width:1025px){
+    .hamberger{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    
+header .hero .left img{
+    padding-top: 5rem;
+    object-fit: cover;
+    width: 400px;
+    padding-left: 2rem;
+}
+
+header .hero .right{
+    padding-top: 6rem;
+    margin-left: -2rem;
+    padding-right: 1.5rem;
+}
+
+.hero .right .text-1{
+    font-size: 1.5rem;
+}
+
+.hero .right .text-2{
+    font-size: 3.5rem;
+    
+}
+
+.hero .right .text-3{
+    font-size: 1.8rem;
+}
+
+footer .footer-social{
+    margin-left: 25rem;
+}
+}
+
+@media (max-width:576px){
+    .hero{
+        flex-direction: column;
+       padding-right: 2.5rem;
+    }
+    
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100% , 69% 95%, 0 100%);
+    }
+
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        margin-top: 2rem;
+        padding: 0 6rem;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+
+    .hero .right .text-1{
+        font-size: 1.5rem;
+    }
+    
+    .hero .right .text-2{
+        font-size: 3.5rem;
+        
+    }
+    
+    .hero .right .text-3{
+        font-size: 1.8rem;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    section.about .about-me-img{
+        width: 350px;
+        margin-left: 6rem;
+    }
+    
+    section.about h1{
+        margin-left: 2rem;
+    }
+    
+    
+    section.about h6{
+        margin-left: 2.5rem;
+    }
+
+    section.about .bt{
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    
+    section.skills .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.projects .slider .slide .flex{
+        flex-direction: column;
+    }
+
+    section.projects .slider .slide img{
+        margin-top: -2.5rem;
+    }
+
+    section.projects .slider .slide h1{
+        margin-bottom: 2rem;
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    section.contact .card{
+        padding: 2rem;
+    }
+
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    footer .footer-social{
+        margin-left: 12rem;
+    }
+    
+}
