@@ -1,2 +1,2 @@
 # WebPortfolio
-My Portfolio made with HTML and CSS and JavaScript.
+My first Personal WebPortfolio made using the basics of Web Development 
